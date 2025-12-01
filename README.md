@@ -2,9 +2,29 @@
 
 A lightweight, static HTML/CSS placeholder landing page for Liquid Legacy Integrative Wellness.
 
+**Live Site**: https://liquidlegacy-landing.pages.dev/
+
 ## Overview
 
 This is a minimal, single-page website designed to establish an online presence while the full website is under development. The page follows the brand style guide and provides essential information about services and contact details.
+
+### What's Included
+
+- ✅ Responsive, mobile-first design
+- ✅ Integrated booking system (Hydreight)
+- ✅ Service cards with benefit-focused icons
+- ✅ Adaptive favicons (light/dark mode)
+- ✅ Brand-compliant color scheme and typography
+- ✅ Smooth hover animations and transitions
+- ✅ Contact information layout
+- ✅ SEO-optimized HTML structure
+
+### Pending Client Input
+
+- Hours of operation verification
+- Phone number
+- Physical address
+- Google Maps directions link
 
 ## Design Features
 
@@ -63,27 +83,28 @@ This is a minimal, single-page website designed to establish an online presence 
     └── favicon_dark.svg
 ```
 
-## Required Updates
+## Client Information Needed
 
-Before launching, please update the following placeholder information in `index.html`:
+The following information needs to be verified/updated by the client:
 
 1. **Booking System** ✅ CONFIGURED:
    - Currently links to: `https://booking.hydreight.com/widget-business/mq46k`
    - Opens in new tab with security attributes
 
-2. **Phone Number** (around line 76-77):
+2. **Hours of Operation** (around line 71):
+   - Currently shows: "Mon & Wed 9am-4pm"
+   - Verify if correct or update as needed
+
+3. **Phone Number** (around line 76-77):
    - Replace `(XXX) XXX-XXXX` in two places:
      - `<a href="tel:+1234567890">` - update the tel: link
      - Phone number display text
 
-3. **Street Address** (around line 81):
+4. **Street Address** (around line 81):
    - Replace `[Street Address, City, State]` with actual address
 
-4. **Directions Link** (around line 81):
+5. **Directions Link** (around line 81):
    - Update `href="#"` with Google Maps URL for the location
-
-5. **Privacy Policy & Terms Links** (around line 92):
-   - Add actual policy pages when ready or remove if not applicable
 
 **Note**: Line numbers are approximate and may shift as content is edited.
 
@@ -194,10 +215,74 @@ For questions or modifications, contact your development team.
 
 ---
 
-**Status**: Production ready - Booking system integrated + favicons added
-**Design Version**: 2.6 (Inverted button hover + adaptive favicons)
+**Status**: Deployed - Awaiting client information
+**Design Version**: 2.6 (Final with smooth button transitions)
+**Deployment**: https://liquidlegacy-landing.pages.dev/
+**Repository**: https://github.com/hovingadesign/liquidlegacy_landing
 **Last Updated**: 2025-12-01
 **Brand Guide Version**: 1.0
 
+## Deployment
+
+The landing page is currently deployed on Cloudflare Pages:
+- **Live URL**: https://liquidlegacy-landing.pages.dev/
+- **Auto-deploy**: Enabled on push to `main` branch
+- **Status**: Awaiting client verification of hours, phone, and address information
+
 ## Icon Credits
 Icons provided by [Iconify](https://iconify.design/) using various open-source icon sets including HealthIcons and Medical Icons.
+
+---
+
+## Development Notes
+
+### Completed Features (2025-12-01)
+
+✅ **Design & Layout**
+- Uplifting wellness-focused aesthetic with flowing water patterns
+- Multi-layer background (waves, gradients, decorative elements)
+- Responsive mobile-first layout
+- Compact service cards with benefit-focused icons
+- Structured contact section with left-aligned text
+
+✅ **Interactive Elements**
+- Smooth button hover transition (gradient to ghost button effect)
+- Service card hover states with icon color changes
+- Adaptive favicon system (light/dark mode)
+
+✅ **Integration**
+- Hydreight booking system linked
+- All external links open in new tabs with security attributes
+- SEO meta tags configured
+
+✅ **Technical**
+- Pure HTML/CSS (minimal JavaScript - only Iconify for icons)
+- Git repository initialized and pushed to GitHub
+- Deployed to Cloudflare Pages with auto-deploy
+
+### Next Steps
+
+1. **Client Review**: Awaiting verification of hours, phone number, and address
+2. **Squarespace Access**: Needed to deploy to production domain
+3. **Final Updates**: Once client provides information, update and redeploy
+4. **Full Site Development**: Begin after landing page goes live
+
+### Known Placeholders
+
+- `(XXX) XXX-XXXX` - Phone number
+- `[Street Address, City, State]` - Physical address
+- Hours may need verification
+- Directions link needs Google Maps URL
+
+### Repository Structure
+
+```
+main branch (auto-deploys to Cloudflare Pages)
+├── Latest commit: "Remove privacy policy and terms links from footer"
+└── 16 files tracked (HTML, CSS, docs, images, references)
+```
+
+---
+
+**Project Contact**: Nate Hovinga | HovingaDesign
+**Client**: Liquid Legacy Integrative Wellness
